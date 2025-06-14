@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/5c575ba63c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "header">
+      <h1>The Odin Project Library</h1>
+      <button id="add-btn"><strong>Add new book</strong></button>
+    </div>
+
+    <dialog id="add-book">
+      <form id="new-book-form" class = "book-form" method="dialog">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required />
+        <label for="author">Author:</label>
+        <input type="text" id="author" required />
+        <label for="pages">Number of pages:</label>
+        <input type="number" id="pages" required />
+        <div>
+          <label for="read">Have you read it?</label>
+          <input type="checkbox" id="read" />
+        </div>
+        <div class = "form-btns">
+          <button type="submit">Add Book</button>
+          <button type="button" id="close-btn">Close</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="books-table"></div>
+  </body>
+</html>
